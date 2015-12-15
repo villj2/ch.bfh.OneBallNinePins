@@ -1,0 +1,34 @@
+Mono path[0] = 'C:/Development/GitHub/ch.bfh.OneBallTenPins/OneBallTenPins/export/bowling_Data/Managed'
+Mono path[1] = 'C:/Development/GitHub/ch.bfh.OneBallTenPins/OneBallTenPins/export/bowling_Data/Mono'
+Mono config path = 'C:/Development/GitHub/ch.bfh.OneBallTenPins/OneBallTenPins/export/bowling_Data/Mono/etc'
+PlayerConnection initialized from C:/Development/GitHub/ch.bfh.OneBallTenPins/OneBallTenPins/export/bowling_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55141
+Multi-casting "[IP] 192.168.0.28 [Port] 55141 [Flags] 2 [Guid] 1035360156 [EditorId] 137103059 [Version] 1048832 [Id] WindowsPlayer(vill) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.28:55141]
+Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7400M Series (ID=0x6760)
+    Vendor:   ATI
+    VRAM:     243 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\InputSimulator.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\InputSimulator.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\system.drawing.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\system.drawing.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\system.windows.forms.dll (this message is harmless)
+Loading C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\system.windows.forms.dll into Unity Child Domain
+Platform assembly: C:\Development\GitHub\ch.bfh.OneBallTenPins\OneBallTenPins\export\bowling_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.133 seconds
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
