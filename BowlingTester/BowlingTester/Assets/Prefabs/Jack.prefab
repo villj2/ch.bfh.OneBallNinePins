@@ -45,9 +45,10 @@ GameObject:
   - 54: {fileID: 5441896}
   - 65: {fileID: 6534268}
   - 136: {fileID: 13612224}
+  - 114: {fileID: 11462792}
   m_Layer: 0
   m_Name: Jack
-  m_TagString: Untagged
+  m_TagString: Jack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +275,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167064}
-  m_LocalRotation: {x: -.35538289, y: .611312568, z: .35538286, w: .611312628}
+  m_LocalRotation: {x: -.35538286, y: .611312509, z: .35538283, w: .611312568}
   m_LocalPosition: {x: -8.35470082e-10, y: -.0229417887, z: -.851381421}
   m_LocalScale: {x: 10.242281, y: 10.2422819, z: 10.2422819}
   m_Children:
@@ -715,6 +716,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .809875965, y: 1.47589993, z: .804229975}
   m_Center: {x: .00569605827, y: .771257997, z: -.861544251}
+--- !u!114 &11462792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7b50834b7c82749b0043ad30e74b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13612224
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -734,7 +746,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Jack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120546}
