@@ -7,11 +7,16 @@ public class GameBehaviour : MonoBehaviour {
 
 
     public GameObject Pins;
+    public GameObject PrefabExplositionStrike;
+    public GameObject PrefabMoveText;
+
 
     private Vector3 _startPosBall;
     private Vector3 _startPosPins;
 
     private GameObject _currentPins;
+    private GameObject _currentPrefabExplositionsStrike;
+    private GameObject _currentPrefabMoveText;
     private Camera _StartCamera;
     private Camera _pinCamera;
 
@@ -67,7 +72,7 @@ public class GameBehaviour : MonoBehaviour {
 
     }
 
-    private int getPointsFromPins()
+    public int getPointsFromPins()
     {
         int ret = 0;
         GameObject[] _ListPins = GameObject.FindGameObjectsWithTag("Jack");
@@ -92,8 +97,21 @@ public class GameBehaviour : MonoBehaviour {
 
     private void addPoints()
     {
-       
-        _pointsBehaviour.addPoints(_currentPlayer, getPointsFromPins());
+        int _currPoints = getPointsFromPins();
+        _pointsBehaviour.addPoints(_currentPlayer, _currPoints);
+    }
+
+    public void StrikeEffect()
+    {
+        _currentPrefabExplositionsStrike = (GameObject)Instantiate(PrefabExplositionStrike, transform.position, Quaternion.identity);
+        _currentPrefabMoveText = (GameObject)Instantiate(PrefabMoveText, _startPosPins, _pinCamera.transform.rotation );
+        //_currentPrefabMoveText.transform.LookAt(_pinCamera.transform );
+    }
+
+    public void PointEffect(int Points)
+    {
+        _currentPrefabMoveText = (GameObject)Instantiate(PrefabMoveText, _startPosPins, _pinCamera.transform.rotation);
+        _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("{0} Points",Points);
     }
 
     private void switchPlayer()

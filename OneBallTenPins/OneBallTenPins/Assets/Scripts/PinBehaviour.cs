@@ -8,8 +8,7 @@ public class PinBehaviour : MonoBehaviour {
 
 
     private GameObject _pinField;
-    public GameObject prefabExplosition;
-    private GameObject _currentExplosition;
+
 
 	// Use this for initialization
 	void Start () {
@@ -45,7 +44,8 @@ public class PinBehaviour : MonoBehaviour {
     {
         if (col.gameObject.name == "Ball")
         {
-            _currentExplosition = (GameObject)Instantiate(prefabExplosition,transform.position,Quaternion.identity);
+            // do nothing
+            // _currentExplosition = (GameObject)Instantiate(prefabExplosition,transform.position,Quaternion.identity);
         }
     }
 }
