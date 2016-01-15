@@ -13,7 +13,7 @@ public class AddForce : MonoBehaviour {
 	
         if (Input.GetKeyDown(KeyCode.A))
         {
-            transform.GetComponent<Rigidbody>().AddForce(new Vector3(-300f, 0f, 0f),ForceMode.Impulse);
+            transform.GetComponent<Rigidbody>().AddForce(new Vector3(-30f, 0f, 0f),ForceMode.Impulse);
         }
 	}
 }

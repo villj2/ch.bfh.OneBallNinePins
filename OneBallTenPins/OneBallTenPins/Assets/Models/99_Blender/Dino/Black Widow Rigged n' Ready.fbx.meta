@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: f23743bb8b37f044b96bdc86662f931d
+timeCreated: 1451396465
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: abdomen hnadle
+    100002: Armature
+    100004: Armature.000
+    100006: Armature.001
+    100008: Armature.002
+    100010: Armature.003
+    100012: Armature.004
+    100014: Armature.005
+    100016: Armature.006
+    100018: Armature.007
+    100020: Armature.008
+    100022: Armature.009
+    100024: //RootNode
+    100026: Bone
+    100028: Bone 1
+    100030: Bone 10
+    100032: Bone 2
+    100034: Bone 3
+    100036: Bone 4
+    100038: Bone 5
+    100040: Bone 6
+    100042: Bone 7
+    100044: Bone 8
+    100046: Bone 9
+    100048: Bone.001
+    100050: Bone.001 1
+    100052: Bone.001 10
+    100054: Bone.001 2
+    100056: Bone.001 3
+    100058: Bone.001 4
+    100060: Bone.001 5
+    100062: Bone.001 6
+    100064: Bone.001 7
+    100066: Bone.001 8
+    100068: Bone.001 9
+    100070: Bone.001_end
+    100072: Bone.001_end 1
+    100074: Bone.001_end 2
+    100076: Bone.002
+    100078: Bone.002 1
+    100080: Bone.002 2
+    100082: Bone.002 3
+    100084: Bone.002 4
+    100086: Bone.002 5
+    100088: Bone.002 6
+    100090: Bone.002 7
+    100092: Bone.002 8
+    100094: Bone.002 9
+    100096: Bone.004
+    100098: Bone.004 1
+    100100: Bone.004 2
+    100102: Bone.004 3
+    100104: Bone.004 4
+    100106: Bone.004 5
+    100108: Bone.004 6
+    100110: Bone.004 7
+    100112: Bone.004 8
+    100114: Bone.004 9
+    100116: Bone.005
+    100118: Bone.005 1
+    100120: Bone.005 2
+    100122: Bone.005 3
+    100124: Bone.005 4
+    100126: Bone.005 5
+    100128: Bone.005 6
+    100130: Bone.005 7
+    100132: Bone.005_end
+    100134: Bone.005_end 1
+    100136: Bone.005_end 2
+    100138: Bone.005_end 3
+    100140: Bone.005_end 4
+    100142: Bone.005_end 5
+    100144: Bone.005_end 6
+    100146: Bone.005_end 7
+    100148: Bone.006
+    100150: Bone.006 1
+    100152: Bone.006 2
+    100154: Bone.006 3
+    100156: Bone.006 4
+    100158: Bone.006 5
+    100160: Bone.006 6
+    100162: Bone.006 7
+    100164: Bone.006 8
+    100166: Bone.006 9
+    100168: Camera.001
+    100170: Circle
+    100172: Circle.000
+    100174: Circle.001
+    100176: Circle.002
+    100178: Circle.003
+    100180: Circle.004
+    100182: Circle.005
+    100184: Circle.006
+    100186: Circle.007
+    100188: Circle.008
+    100190: Circle.009
+    100192: Circle.010
+    100194: Circle.011
+    100196: foreleg_2_handle_L
+    100198: foreleg_2_handle_R
+    100200: foreleg_handle_L
+    100202: foreleg_handle_R
+    100204: hindleg_handle_L
+    100206: hindleg_handle_R
+    100208: midleg_handle_L
+    100210: midleg_handle_R
+    100212: pedipalp_handle_L
+    100214: pedipalp_handle_R.
+    100216: Plane
+    100218: Sphere
+    100220: Sphere.001
+    100222: Sphere.002
+    100224: Sphere.003
+    100226: Sphere.004
+    100228: Sphere.005
+    100230: Sphere.006
+    100232: Sphere.007
+    100234: Sphere.008
+    100236: Sphere.009
+    100238: Sphere.010
+    100240: Text
+    100242: thorax handle
+    100244: thorax handle.001
+    400000: abdomen hnadle
+    400002: Armature
+    400004: Armature.000
+    400006: Armature.001
+    400008: Armature.002
+    400010: Armature.003
+    400012: Armature.004
+    400014: Armature.005
+    400016: Armature.006
+    400018: Armature.007
+    400020: Armature.008
+    400022: Armature.009
+    400024: //RootNode
+    400026: Bone
+    400028: Bone 1
+    400030: Bone 10
+    400032: Bone 2
+    400034: Bone 3
+    400036: Bone 4
+    400038: Bone 5
+    400040: Bone 6
+    400042: Bone 7
+    400044: Bone 8
+    400046: Bone 9
+    400048: Bone.001
+    400050: Bone.001 1
+    400052: Bone.001 10
+    400054: Bone.001 2
+    400056: Bone.001 3
+    400058: Bone.001 4
+    400060: Bone.001 5
+    400062: Bone.001 6
+    400064: Bone.001 7
+    400066: Bone.001 8
+    400068: Bone.001 9
+    400070: Bone.001_end
+    400072: Bone.001_end 1
+    400074: Bone.001_end 2
+    400076: Bone.002
+    400078: Bone.002 1
+    400080: Bone.002 2
+    400082: Bone.002 3
+    400084: Bone.002 4
+    400086: Bone.002 5
+    400088: Bone.002 6
+    400090: Bone.002 7
+    400092: Bone.002 8
+    400094: Bone.002 9
+    400096: Bone.004
+    400098: Bone.004 1
+    400100: Bone.004 2
+    400102: Bone.004 3
+    400104: Bone.004 4
+    400106: Bone.004 5
+    400108: Bone.004 6
+    400110: Bone.004 7
+    400112: Bone.004 8
+    400114: Bone.004 9
+    400116: Bone.005
+    400118: Bone.005 1
+    400120: Bone.005 2
+    400122: Bone.005 3
+    400124: Bone.005 4
+    400126: Bone.005 5
+    400128: Bone.005 6
+    400130: Bone.005 7
+    400132: Bone.005_end
+    400134: Bone.005_end 1
+    400136: Bone.005_end 2
+    400138: Bone.005_end 3
+    400140: Bone.005_end 4
+    400142: Bone.005_end 5
+    400144: Bone.005_end 6
+    400146: Bone.005_end 7
+    400148: Bone.006
+    400150: Bone.006 1
+    400152: Bone.006 2
+    400154: Bone.006 3
+    400156: Bone.006 4
+    400158: Bone.006 5
+    400160: Bone.006 6
+    400162: Bone.006 7
+    400164: Bone.006 8
+    400166: Bone.006 9
+    400168: Camera.001
+    400170: Circle
+    400172: Circle.000
+    400174: Circle.001
+    400176: Circle.002
+    400178: Circle.003
+    400180: Circle.004
+    400182: Circle.005
+    400184: Circle.006
+    400186: Circle.007
+    400188: Circle.008
+    400190: Circle.009
+    400192: Circle.010
+    400194: Circle.011
+    400196: foreleg_2_handle_L
+    400198: foreleg_2_handle_R
+    400200: foreleg_handle_L
+    400202: foreleg_handle_R
+    400204: hindleg_handle_L
+    400206: hindleg_handle_R
+    400208: midleg_handle_L
+    400210: midleg_handle_R
+    400212: pedipalp_handle_L
+    400214: pedipalp_handle_R.
+    400216: Plane
+    400218: Sphere
+    400220: Sphere.001
+    400222: Sphere.002
+    400224: Sphere.003
+    400226: Sphere.004
+    400228: Sphere.005
+    400230: Sphere.006
+    400232: Sphere.007
+    400234: Sphere.008
+    400236: Sphere.009
+    400238: Sphere.010
+    400240: Text
+    400242: thorax handle
+    400244: thorax handle.001
+    2300000: abdomen hnadle
+    2300002: Circle
+    2300004: Circle.002
+    2300006: Circle.008
+    2300008: foreleg_2_handle_L
+    2300010: foreleg_2_handle_R
+    2300012: foreleg_handle_L
+    2300014: foreleg_handle_R
+    2300016: hindleg_handle_L
+    2300018: hindleg_handle_R
+    2300020: midleg_handle_L
+    2300022: midleg_handle_R
+    2300024: pedipalp_handle_L
+    2300026: pedipalp_handle_R.
+    2300028: Plane
+    2300030: Sphere
+    2300032: Sphere.001
+    2300034: Sphere.002
+    2300036: Sphere.003
+    2300038: Sphere.004
+    2300040: Sphere.005
+    2300042: Sphere.006
+    2300044: Sphere.007
+    2300046: Sphere.008
+    2300048: Sphere.009
+    2300050: Sphere.010
+    2300052: Text
+    2300054: thorax handle
+    2300056: thorax handle.001
+    3300000: abdomen hnadle
+    3300002: Circle
+    3300004: Circle.002
+    3300006: Circle.008
+    3300008: foreleg_2_handle_L
+    3300010: foreleg_2_handle_R
+    3300012: foreleg_handle_L
+    3300014: foreleg_handle_R
+    3300016: hindleg_handle_L
+    3300018: hindleg_handle_R
+    3300020: midleg_handle_L
+    3300022: midleg_handle_R
+    3300024: pedipalp_handle_L
+    3300026: pedipalp_handle_R.
+    3300028: Plane
+    3300030: Sphere
+    3300032: Sphere.001
+    3300034: Sphere.002
+    3300036: Sphere.003
+    3300038: Sphere.004
+    3300040: Sphere.005
+    3300042: Sphere.006
+    3300044: Sphere.007
+    3300046: Sphere.008
+    3300048: Sphere.009
+    3300050: Sphere.010
+    3300052: Text
+    3300054: thorax handle
+    3300056: thorax handle.001
+    4300000: Text
+    4300002: Plane
+    4300004: Circle
+    4300006: thorax handle.001
+    4300008: foreleg_2_handle_L
+    4300010: foreleg_2_handle_R
+    4300012: foreleg_handle_L
+    4300014: foreleg_handle_R
+    4300016: hindleg_handle_L
+    4300018: hindleg_handle_R
+    4300020: midleg_handle_L
+    4300022: midleg_handle_R
+    4300024: thorax handle
+    4300026: abdomen hnadle
+    4300028: Circle.002
+    4300030: Circle.008
+    4300032: Sphere
+    4300034: pedipalp_handle_L
+    4300036: pedipalp_handle_R.
+    4300038: Sphere.002
+    4300040: Sphere.003
+    4300042: Sphere.004
+    4300044: Sphere.005
+    4300046: Sphere.006
+    4300048: Sphere.007
+    4300050: Sphere.008
+    4300052: Sphere.009
+    4300054: Sphere.010
+    4300056: Sphere.001
+    4300058: Circle.001
+    4300060: Circle.003
+    4300062: Circle.004
+    4300064: Circle.005
+    4300066: Circle.006
+    4300068: Circle.007
+    4300070: Circle.009
+    4300072: Circle.010
+    4300074: Circle.000
+    4300076: Circle.011
+    7400000: Armature.001|Armature.001Action
+    7400002: Armature.001|Armature.004Action
+    7400004: Armature.001|Armature.005Action
+    7400006: Armature.001|Armature.008Action
+    7400008: Armature.004|Armature.001Action
+    7400010: Armature.004|Armature.004Action
+    7400012: Armature.004|Armature.005Action
+    7400014: Armature.004|Armature.008Action
+    7400016: Armature.005|Armature.001Action
+    7400018: Armature.005|Armature.004Action
+    7400020: Armature.005|Armature.005Action
+    7400022: Armature.005|Armature.008Action
+    7400024: Armature.008|Armature.001Action
+    7400026: Armature.008|Armature.004Action
+    7400028: Armature.008|Armature.005Action
+    7400030: Armature.008|Armature.008Action
+    9500000: //RootNode
+    13700000: Circle.000
+    13700002: Circle.001
+    13700004: Circle.003
+    13700006: Circle.004
+    13700008: Circle.005
+    13700010: Circle.006
+    13700012: Circle.007
+    13700014: Circle.009
+    13700016: Circle.010
+    13700018: Circle.011
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
