@@ -38,7 +38,7 @@ public class PointsBehaviour : MonoBehaviour {
         if(currentThrow == 2 && points != 10) { playerHasSpare[player] = false; playerHasStrike[player] = false; }
 
         if(playerHasStrike[player]) { points = points * 2; }
-        if(playerHasSpare[player] && currentThrow == 1) { points = points * 2; }
+        if(playerHasSpare[player] && currentThrow == 2) { points = points * 2; }
 
         playersPoints[player] += points;
 

@@ -30,13 +30,12 @@ public class GameBehaviour : MonoBehaviour {
 
     private GameObject _currentBall;
     private Rigidbody _currentBallRigibody;
-    private bool _isThrowing;
+    public bool _isThrowing;
     //private FixedJoint _currentFixedJoint;
     //private GameObject _currentVirtualHand;
     //private GameObject _currentVirtualHandContainer;
 
-    private Text _playerPointsText;
-
+ 
     private Camera _StartCamera;
     private Camera _pinCamera;
 
@@ -47,7 +46,7 @@ public class GameBehaviour : MonoBehaviour {
     private PointsBehaviour _pointsBehaviour;
     //private VirtualHand _virtualHand;
 
-    private List<float> _velocityList;
+    public List<float> _velocityList;
 
 
     // Use this for initialization
@@ -73,15 +72,13 @@ public class GameBehaviour : MonoBehaviour {
 
         _pointsBehaviour = GameObject.Find("ScriptContainer").GetComponent<PointsBehaviour>();
 
-        _playerPointsText = GameObject.Find("PointText").GetComponent<Text>();
-
         _players = new Dictionary<int, string>();
 
         createPlayers();
         _currentPlayer = _players.Keys.First();
 
         _currentPrefabMoveText = (GameObject)Instantiate(PrefabMoveText, transform.position, _StartCamera.transform.rotation);
-        _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}", _currentPlayer, _currentThrow);
+        _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}\n{2}", _currentPlayer, _currentThrow, string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2)));
 
         _isThrowing = false;
 
@@ -98,22 +95,25 @@ public class GameBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+    }
+    void FixedUpdate()
+    {
+
         if (_velocityList.Count > 10)
         {
             _velocityList.RemoveRange(0, _velocityList.Count - 10);
         }
-
 
         if (Input.GetKeyDown(KeyCode.R))
         {
             resetBallPins();
             //switchPlayer();
         }
-        if(Input.GetKeyDown(KeyCode.N)) // next throw
+        if (Input.GetKeyDown(KeyCode.N)) // next throw
         {
             resetBallPins();
             addPoints();
-          
+
             //switchPlayer();
         }
         if (Input.GetKeyDown(KeyCode.P))
@@ -125,26 +125,22 @@ public class GameBehaviour : MonoBehaviour {
 
 
             //debug
-            float average = 1f;
-            //float average = _velocityList[_velocityList.Count - 1] - _velocityList[0];
+            //float average = 1f;
+            Debug.Log("----------------");
+            _velocityList.ForEach( x => Debug.Log(x));
 
+            float average = _velocityList[_velocityList.Count - 1] - _velocityList[0];
 
-            //Debug.Log(average);
+            average = average * 30f;
+
+            Debug.Log(average);
             _currentBallRigibody.useGravity = true;
+            _currentBall.GetComponent<BallBehaviour>().enabled = false;
             //Destroy(_currentFixedJoint);
             _currentBallRigibody.AddRelativeForce(Vector3.forward * (average) * 30f * 1.5f, ForceMode.Impulse);
             _isThrowing = true;
             StartCoroutine(resetAfter10Seconds());
         }
-
-        //can be null because destroy and new initialise
-        if(_currentBall != null) {
-
-
-            //_currentBall.transform.localPosition = API.Instance.Wand.transform.localPosition;
-           //API.Instance.Cave.WandSettings.RotationSmoothing.EnableOneEuroSmoothing = false;
-        }
-        //Debug.Log(string.Format("Player 1 Points: {0}, Player 2 Points: {1}", getPoints(1), getPoints(2)));
 
     }
 
@@ -192,14 +188,13 @@ public class GameBehaviour : MonoBehaviour {
         }
         else
         {
-
-            if (_currentThrow < 2)
+            _currentThrow += 1;
+            if (_currentThrow <= 2)
             {
                 _currentPrefabMoveText = (GameObject)Instantiate(PrefabMoveText, transform.position, _StartCamera.transform.rotation);
-                _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}", _currentPlayer, _currentThrow);
+                _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}\n{2}", _currentPlayer, _currentThrow,string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2)));
             }
-            _currentThrow += 1;
-            _playerPointsText.text = string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2));
+
 
         }
 
@@ -223,11 +218,12 @@ public class GameBehaviour : MonoBehaviour {
     public void switchPlayer()
     {
 
-        _playerPointsText.text =  string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2));
+        //_playerPointsText.text =  string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2));
         _currentPlayer = (_currentPlayer == _players.Keys.First() ? _players.Keys.Last(): _players.Keys.First());
         _currentThrow = 1;
         _currentPrefabMoveText = (GameObject)Instantiate(PrefabMoveText, transform.position, _StartCamera.transform.rotation);
-        _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}", _currentPlayer, _currentThrow);
+        _currentPrefabMoveText.GetComponent<TextMesh>().text = string.Format("Spieler {0} ist an der Reihe, Wurf {1}\n{2}", _currentPlayer, _currentThrow, string.Format("Punkte Spieler1: {0}\nPunkte Spieler2: {1}", _pointsBehaviour.getPoint(1), _pointsBehaviour.getPoint(2)));
+
 
 
     }

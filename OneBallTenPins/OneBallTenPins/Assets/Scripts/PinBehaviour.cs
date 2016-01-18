@@ -32,7 +32,7 @@ public class PinBehaviour : MonoBehaviour {
 
         // first check if standing
         // second check if they are on the plane
-        if ((transform.up.y < 0.7) || (Vector3.Distance(_pinField.transform.position, transform.position) > 3f))
+        if ((transform.up.y < 0.7) || (Vector3.Distance(_pinField.transform.position, transform.position) > 5f))
 
             { ret = 1; }
 

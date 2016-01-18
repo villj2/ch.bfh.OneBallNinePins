@@ -570,7 +570,7 @@ namespace Cave
                     c.worldCamera = FullViewInfo[settingsIndex].Left.Cam;
                     canvasRectTransform.sizeDelta = new Vector2(caveSide.transform.localScale.z * 1000f, caveSide.transform.localScale.x * 1000f);
                     canvasRectTransform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                    //canvasRectTransform.SetParent(API.Instance.Cave.transform);
+                    canvasRectTransform.SetParent(API.Instance.Cave.transform);
                     canvasRectTransform.localPosition = caveSide.transform.localPosition;
                     canvasRectTransform.eulerAngles = new Vector3(rot.x, rot.y, 0f);
                 }

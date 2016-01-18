@@ -19,6 +19,7 @@ public class CamSwitcher : MonoBehaviour
     
     void OnTriggerEnter(Collider col)
     {
+        if(_mainCamera == null) return;
         if (col.gameObject.name == "CamChanger")
         {
             _mainCamera.enabled = false;
